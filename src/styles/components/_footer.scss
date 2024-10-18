@@ -1,0 +1,22 @@
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    width: 1440px;
+    height: 209px;
+    position: relative; /* Pour qu'il reste au bas du contenu */
+    margin-top: 20px; /* Ajoute un peu d'espace entre le contenu et le footer */
+
+  }
+
+.footer img {
+    width: 122px;
+    margin-top: 65px;
+    
+  }
+
+.footer p {
+  margin-top: 45px;
+}

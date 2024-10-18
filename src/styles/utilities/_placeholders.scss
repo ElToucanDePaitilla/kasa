@@ -1,0 +1,96 @@
+  // Centrage total (horizontal et vertical)
+  %flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Centrage horizontal uniquement
+  %flex-center-horizontal {
+    display: flex;
+    justify-content: center;
+  }
+  
+  // Centrage vertical uniquement
+  %flex-center-vertical {
+    display: flex;
+    align-items: center;
+  }
+  
+  // Répartition égale des éléments (space-between)
+  %flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  // Répartition égale avec de l'espace autour (space-around)
+  %flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  // Répartition avec des marges à chaque extrémité (space-evenly)
+  %flex-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  // Alignement des éléments en colonne (flex-direction: column)
+  %flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  // Alignement en colonne avec centrage horizontal
+  %flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  // Alignement en colonne avec centrage horizontal et vertical
+  %flex-column-center-both {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Flex avec wrap pour gérer le débordement
+  %flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  // Alignement des éléments flex à la fin (flex-end)
+  %flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  // Flex avec alignement des éléments au début (flex-start)
+  %flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  // Flex pour inverser l'ordre (row-reverse)
+  %flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  // Flex avec direction en colonne inversée (column-reverse)
+  %flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
