@@ -1,43 +1,21 @@
 import './Style.scss';
 import './App.scss';
-import React from 'react'; // Bibliothèque principale pour créer des interfaces utilisateur.
+import React from 'react';
 import {
-  createBrowserRouter, // Crée un objet "routeur" basé sur les chemins définis.
   RouterProvider, // Composant React qui enveloppe l'application pour y injecter les routes.
 } from "react-router-dom";
 
-import BannerHome from './components/BannerHome';
-import BannerAbout from './components/BannerAbout';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import NotFoundPage from './components/NotFoundPage';
-import Gallery from './components/Gallery';
+import Router from "./Router.js"
 
 
 // Définition des routes:
-const router = createBrowserRouter([
-  {
-    path: "/", // Ici une seule route, qui correspond à la racine de l'application ("/")
-    element: (
-      <div>
-        <Header />
-        <BannerHome />
-        <Gallery />
-        <Footer />
-      </div>
-    ), // Lorsque l'utilisateur navigue sur cette route l'élément est "rendu".
-  },
-  {
-    path: "*", // Route pour la gestion des erreurs 404 (page non trouvée)
-    element: <NotFoundPage />,
-  },
-]);
+
 
 function App() {
   return (
     <div className="App">
       <React.StrictMode>
-        <RouterProvider router={router} />
+        <RouterProvider router={Router} />
       </React.StrictMode>
     </div>
   );

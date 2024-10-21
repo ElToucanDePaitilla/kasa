@@ -1,21 +1,17 @@
 import React from "react";
-import Header from "../../components/Header";
-import Banner from "../../components/Banner";
-import Gallery from "../../components/Gallery";
-import Footer from "../../components/Footer";
-
-import ImageHeaderHome from "../../assets/images/banner/ImageHeaderHome.png";
+import Header from "../components/Header";
+import BannerHome from "../components/BannerHome";
+import Gallery from "../components/Gallery";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="home">
-      <Header />
-      <main>
-        <Banner texte="Chez vous, partout et ailleurs" image={ImageHeaderHome} />
+    <div>
+        <Header />
+        <BannerHome />
         <Gallery />
-      </main>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
   );
 };
 
