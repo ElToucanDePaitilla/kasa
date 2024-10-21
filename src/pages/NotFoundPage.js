@@ -1,18 +1,16 @@
 import React from "react";
 import Header from "../components/Header";
-import BannerAbout from "../components/BannerAbout";
-import Collapse from "../components/Collapse";
+import Error404 from "../components/Error404";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const NotFoundPage = () => {
   return (
     <div>
         <Header />
-        <BannerAbout />
-        <Collapse />
+        <Error404 />
         <Footer />
       </div>
   );
 };
 
-export default Home;
+export default NotFoundPage;

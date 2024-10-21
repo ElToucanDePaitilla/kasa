@@ -1,8 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
-import NotFoundPage from './components/NotFoundPage';
+
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import RentalPage from './pages/RentalPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const Router = createBrowserRouter([
     {
@@ -11,8 +12,8 @@ const Router = createBrowserRouter([
     },
 
     {
-        path: "/about", // Ici une seule route, qui correspond à la racine de l'application ("/")
-        element: <AboutPage /> 
+      path: "/about", // Ici une seule route, qui correspond à la racine de l'application ("/")
+      element: <AboutPage /> 
     },
   
     {
