@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import RentalPage from './pages/RentalPage';
+import RentalDescriptionPage from './pages/RentalDescriptionPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 const Router = createBrowserRouter([
@@ -12,13 +12,13 @@ const Router = createBrowserRouter([
     },
 
     {
-      path: "/about", // Ici une seule route, qui correspond à la racine de l'application ("/")
+      path: "/about",
       element: <AboutPage /> 
     },
   
     {
-      path: "/rental", // Ici une seule route, qui correspond à la racine de l'application ("/")
-      element: <RentalPage /> 
+      path: "/rental",
+      element: <RentalDescriptionPage /> 
     },
 
     {
