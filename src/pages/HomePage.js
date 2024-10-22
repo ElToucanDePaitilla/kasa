@@ -4,15 +4,15 @@ import BannerHome from "../components/BannerHome";
 import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
-        <Header />
-        <BannerHome />
-        <Gallery />
-        <Footer />
-      </div>
+      <Header />
+      <BannerHome />
+      <Gallery />
+      <Footer />
+    </div>
   );
 };
 
-export default Home;
+export default HomePage;

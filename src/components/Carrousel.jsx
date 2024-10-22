@@ -2,17 +2,16 @@ import React, { useState } from "react";
 import nextIcon from "../assets/images/carrousel/next.png";
 import previousIcon from "../assets/images/carrousel/previous.png";
 
+
 const Carrousel = ({ pictures }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Gérer le clic sur "Suivant"
   const handleNext = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
     );
   };
 
-  // Gérer le clic sur "Précédent"
   const handlePrev = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
@@ -20,7 +19,7 @@ const Carrousel = ({ pictures }) => {
   };
 
   return (
-    <div className="carrousel-container" style={{ width: "1240px", height: "415px" }}>
+    <div className="carrousel-container">
       {pictures.length > 1 && (
         <img
           src={previousIcon}

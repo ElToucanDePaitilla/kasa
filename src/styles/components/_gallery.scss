@@ -6,71 +6,21 @@
   background-color: #F6F6F6;
   width: 1240px;
   border-radius: 25px;
-  margin: 56px auto; // Centre la galerie horizontalement et ajoute un espace supérieur général
+  margin: 56px auto;
   padding: 20px;
+}
 
-  // Breakpoint pour les tablettes
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .gallery {
     grid-template-columns: repeat(2, 340px);
     gap: 30px;
   }
+}
 
-  // Breakpoint pour les smartphones
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .gallery {
     grid-template-columns: repeat(1, 340px);
   }
-
-  .gallery-item {
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative; // Pour positionner l'overlay dégradé
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-
-    // Ajout du margin-top pour la première ligne
-    &:nth-child(-n+3) {
-      margin-top: 50px;
-    }
-
-    // Ajout du margin-bottom pour la dernière ligne
-    &:nth-last-child(-n+3) {
-      margin-bottom: 50px;
-    }
-
-    .gallery-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    // Overlay avec le dégradé au bas de l'image
-    .gradient-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 30%; // Le dégradé couvre 30% de la hauteur de l'image
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); // Dégradé noir qui s'atténue
-    }
-
-    .gallery-title-overlay {
-      position: absolute;
-      bottom: 10px; // Position du texte au bas de l'image
-      left: 10px;
-      color: white;
-      z-index: 1; // Assure que le texte est au-dessus de l'overlay
-      text-align: left;
-
-      h3 {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 25.67px;
-        margin: 0;
-      }
-    }
-  }
 }
+
+

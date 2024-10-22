@@ -1,18 +1,15 @@
-import React, { useState } from 'react';
-import rentalsList from '../datas/rentals-list.json'; // Importer le fichier JSON directement
-import GaleryItem from './GaleryItem.jsx'
+import React from "react";
+import GaleryItem from "./GalleryItem";
+import rentalData from "../datas/rentals-list.json";
 
 const Gallery = () => {
-  const [biensImmoList] = useState(rentalsList); // Utilisation des données du fichier JSON
-
   return (
     <div className="gallery">
-      {biensImmoList.map((bien) => (
-       <GaleryItem bien={bien} key={bien.id}/>
+      {rentalData.map((bien) => (
+        <GaleryItem key={bien.id} bien={bien} />
       ))}
     </div>
   );
 };
 
 export default Gallery;
-
