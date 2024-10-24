@@ -3,7 +3,19 @@ import { useParams } from "react-router-dom"; // Pour récupérer l'ID depuis l'
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Carrousel from "../components/Carrousel";
+import RentalDescription from "../components/RentalDescription"; // Correcte importation pour RentalDescription
 import rentalData from "../datas/rentals-list.json";
+
+
+
+
+
+
+
+
+
+
+
 
 const RentalDescriptionPage = () => {
   const { id } = useParams(); // Récupérer l'ID du bien depuis l'URL
