@@ -1,32 +1,44 @@
 import React, { useState } from 'react';
 import OpenedClosedIcon from '../assets/images/collapse/OpenedClosed.png';
-import '../styles/components/_collapseItem.scss'; // Importation du fichier SCSS
 
 const CollapseItem = ({ title, content }) => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggleDropdown = () => {
-        setIsOpen(!isOpen);
-    };
+  
+  if (!content || !Array.isArray(content)) {
+    return null; 
+  }
 
-    return (
-        <div className="dropdown">
-            <label className="dropdown-btn" onClick={toggleDropdown}>
-                {title}
-                <img
-                    src={OpenedClosedIcon}
-                    alt="Icone d'accordéon"
-                    className={`dropdown-icon ${isOpen ? 'rotate' : ''}`}
-                />
-            </label>
-            <div className={`dropdown-content ${isOpen ? 'show' : ''}`}>
-                {content.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                ))}
-            </div>
-        </div>
-    );
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="dropdown">
+      <button onClick={toggleCollapse} className="dropdown-btn">
+        {title}
+        {/* Utilisation de l'image pour l'icône */}
+        <img 
+          src={OpenedClosedIcon} 
+          alt="Opened/Closed Icon" 
+          className={`dropdown-icon ${isOpen ? 'rotate' : ''}`} 
+        />
+      </button>
+      {/* Affichage du contenu si isOpen est true */}
+      <div className={`dropdown-content ${isOpen ? 'show' : ''}`}>
+        {/* Affichage du texte passé en content */}
+        {content.length > 0 ? (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>Aucun contenu disponible</p>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default CollapseItem;
-
