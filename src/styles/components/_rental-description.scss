@@ -19,21 +19,18 @@
         font-weight: 500;
         font-size: 36px;
         margin-bottom: 0;
-        text-align: left;
       }
 
       p {
         font-size: 18px;
         margin-top: 0;
         margin-bottom: 15px;
-        text-align: left;
       }
 
       .rental-tags {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
-        text-align: left;
       }
     }
 
@@ -46,53 +43,57 @@
     }
   }
 
-  // Section des items de collapse
+  // Collapses section
   .collapse-container {
-    display: flex;
+    display: flex; // Flexbox pour aligner les collapses
     justify-content: space-between;
-    gap: 20px;
+    gap: 20px; // Espace entre les deux collapses
 
     > div {
-      width: 48%;
+      width: 48%; // Chaque collapse prend 48% de la largeur
+      display: flex;
+      flex-direction: column; // Permet au contenu d'être en colonne
     }
   }
 
+  .collapse-content {
+    flex-grow: 1; // Le contenu s'étend pour prendre tout l'espace disponible
+  }
+
   .dropdown-btn {
-    font-size: 18px; // Taille du titre des collapse
-    font-weight: 500;
-    padding: 10px;
+    font-size: 18px; // Taille des titres des collapses
+    padding: 15px;
     background-color: #ff6060;
     color: white;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
   }
 
-  // Pour les contenus des collapse
+  .dropdown-btn:hover {
+    background-color: #ff4040;
+  }
+
   .dropdown-content {
-    padding: 15px;
+    color: blue;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
     background-color: #f5f5f5;
-    border-radius: 5px;
-    display: none;
+    margin-top: 5px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.67px;
+    transition: max-height 0.5s ease, padding 0.5s ease;
   }
 
   .dropdown-content.show {
-    display: block;
-  }
-
-  // Icon rotation for opened state
-  .dropdown-icon {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease;
-  }
-
-  .rotate {
-    transform: rotate(180deg);
+    max-height: 500px;
+    padding: 15px 35px;
   }
 }

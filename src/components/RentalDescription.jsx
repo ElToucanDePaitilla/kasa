@@ -24,6 +24,8 @@ const RentalDescription = ({ rental }) => {
           <RateBar rating={parseInt(rental.rating, 10)} />
         </div>
       </div>
+
+      {/* Collapses */}
       <div className="collapse-container">
         <CollapseItem title="Description" content={[rental.description]} />
         <CollapseItem title="Équipements" content={rental.equipments} />
