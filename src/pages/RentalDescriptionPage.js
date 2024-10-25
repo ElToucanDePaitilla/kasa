@@ -1,10 +1,11 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, redirect } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carrousel from '../components/Carrousel';
 import RentalDescription from '../components/RentalDescription';
 import rentalData from '../datas/rentals-list.json';
+import NotFoundPage from './NotFoundPage';
 
 const RentalDescriptionPage = () => {
   const { id } = useParams();
@@ -17,7 +18,9 @@ const RentalDescriptionPage = () => {
   const rental = rentalData.find((bien) => bien.id === id);
 
   if (!rental) {
-    return <div>Bien non trouvé</div>;
+    return(
+      <NotFoundPage/>
+  ) ; // Redirige vers la page 404
   }
 
   return (
