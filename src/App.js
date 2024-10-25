@@ -5,7 +5,7 @@ import {
   RouterProvider, // Composant React qui enveloppe l'application pour y injecter les routes.
 } from "react-router-dom";
 
-import Router from "./Router.js"
+import Router from "./Router.jsx"
 
 
 // Définition des routes:

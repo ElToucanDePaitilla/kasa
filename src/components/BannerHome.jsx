@@ -5,8 +5,9 @@ import ImageHeaderHome from '../assets/images/banner/ImageHeaderHome.png';
 const BannerHome = () => {
     return (       
         <div className="banner banner-home opacity-home">
-            <img className="position-img-home" src={ImageHeaderHome} alt="Bannière" />
             <h1>Chez vous, partout et ailleurs</h1>
+            <img className="position-img-home" src={ImageHeaderHome} alt="Bannière" />
+            
         </div>
     );
 };

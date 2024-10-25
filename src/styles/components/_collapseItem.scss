@@ -1,12 +1,21 @@
+/* Styles globaux du composant parent */
+
+/* Section globale pour organiser le contenu */
+.content {
+  max-width: 1023px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
 /* Styles des boutons dropdown */
 .dropdown {
-    margin-bottom: 20px;
-  }
-  
-  .dropdown:last-child {
+  margin-bottom: 20px;
+
+  &:last-child {
     margin-bottom: 0;
   }
-  
+
   .dropdown-btn {
     width: 100%;
     background-color: #ff6060;
@@ -21,12 +30,12 @@
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ff4040;
+    }
   }
-  
-  .dropdown-btn:hover {
-    background-color: #ff4040;
-  }
-  
+
   .dropdown-content {
     max-height: 0;
     overflow: hidden;
@@ -37,23 +46,27 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 25.67px;
-    transition: max-height 0.5s ease, padding 0.5s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease; /* Transition fluide sur max-height et padding */
     text-align: justify;
+
+    /* Ajout de padding réduit lorsque caché pour éviter les "sauts" */
+    &.show {
+      max-height: 500px; /* Ajustez selon le contenu attendu */
+      padding: 15px 50px; /* Ajout de padding lorsque visible */
+    }
+
+    li {
+      list-style-type: none;
+    }
   }
-  
-  .dropdown-content.show {
-    max-height: 500px; /* Ajustez selon la taille du contenu */
-    padding: 15px;
-  }
-  
-  /* Rotation de l'icône */
+
   .dropdown-icon {
     width: 20px;
-    height: 20px;
+    height: 12px;
     transition: transform 0.3s ease;
+
+    &.rotate {
+      transform: rotate(180deg);
+    }
   }
-  
-  .rotate {
-    transform: rotate(180deg);
-  }
-  
+}

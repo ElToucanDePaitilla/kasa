@@ -6,22 +6,24 @@ html {
 }
 
 * {
-  margin: 100;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  position: relative;
-  z-index: 100;
-  font-size: 48px;
-  font-weight: 700;
+.banner-home h1 {
+  position: relative;           // Assurez-vous que le texte est positionné correctement
+  z-index: 3;                   // Le texte au-dessus de l'image
   color: white;
-  top: 30%;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-  -webkit-text-stroke: 1px black; /* Bordure noire autour des lettres */
-  text-stroke: 1px black; /* Bordure noire pour les navigateurs qui le supportent */
+  font-size: 48px;
+  padding: 0 20px;
+  margin: 0;
+  top: 0;                       // Annule le `top: 30%` qui vient du fichier global
+  line-height: 1.2;             // Ajuste l'espacement vertical
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);  // Garde les autres effets
+  -webkit-text-stroke: 1px black;
 }
+
 
 h2 {
   margin-right: 200px;

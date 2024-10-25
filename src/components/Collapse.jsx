@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CollapseItem from './CollapseItem';
-import '../styles/components/_collapse.scss'; 
+
 import collapsesData from '../datas/collapses-text.json'; // Importer les données JSON
 
 const Collapse = () => {
