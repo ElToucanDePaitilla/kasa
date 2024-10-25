@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 100px; // Utilisation d'une notation abrégée pour le padding
-  width: 100%; // S'assure que le header prend toute la largeur
+  padding: 30px 100px;
+  width: 100%;
 
   .logo-header {
     img {
@@ -19,13 +19,14 @@
       gap: 50px;
 
       li {
-        a {
+        .nav-link {
           font-size: 24px;
           text-decoration: none;
           color: black;
           font-weight: 500;
 
-          &:hover {
+          &:hover,
+          &.active {
             text-decoration: underline;
           }
         }
@@ -33,3 +34,4 @@
     }
   }
 }
+
