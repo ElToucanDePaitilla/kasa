@@ -1,7 +1,7 @@
 .rental-description {
   width: 1240px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
 
   // Header section split into 85% and 15%
   .rental-header {
@@ -11,20 +11,21 @@
     margin-bottom: 30px;
 
     .left-container {
-      width: 85%;
+      width: 90%;
       text-align: left;
+     
 
       h2 {
         color: #FF6060;
         font-weight: 500;
         font-size: 36px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
 
       p {
         font-size: 18px;
         margin-top: 0;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
 
       .rental-tags {
@@ -35,7 +36,7 @@
     }
 
     .right-container {
-      width: 15%;
+      width: 10%;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
