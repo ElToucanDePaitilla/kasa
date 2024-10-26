@@ -19,20 +19,13 @@
   }
 
   img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-      object-fit: cover;
-    border-radius: 15px; /* Assure que l'image a des coins arrondis */
-    position: relative;
-    z-index: 1;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
   }
 
   
 }
-
-
-
 
 .gradient-overlay {
   position: absolute;

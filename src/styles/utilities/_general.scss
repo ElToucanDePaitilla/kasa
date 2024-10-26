@@ -11,24 +11,6 @@ html {
   box-sizing: border-box;
 }
 
-.banner-home h1 {
-  position: relative;           // Assurez-vous que le texte est positionné correctement
-  z-index: 3;                   // Le texte au-dessus de l'image
-  color: white;
-  font-size: 48px;
-  padding: 0 20px;
-  margin: 0;
-  top: 0;                       // Annule le `top: 30%` qui vient du fichier global
-  line-height: 1.2;             // Ajuste l'espacement vertical
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);  // Garde les autres effets
-  -webkit-text-stroke: 1px black;
-}
-
-
-h2 {
-  margin-right: 200px;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -39,5 +21,7 @@ body {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px; /* Ajoute un léger padding pour que le contenu ne touche pas les bords de l'écran */
+  padding: 0 20px;
 }
+
+
