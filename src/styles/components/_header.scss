@@ -3,7 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 100px;
+  max-width: 1240px;
+  margin: 30px auto;
 
   .logo-header {
     img {
@@ -28,6 +29,31 @@
           &.active {
             text-decoration: underline;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .header {
+    padding: 0 0;
+  }
+
+  .logo-header {
+    img {
+      width: 145px !important; 
+      max-width: 145px; 
+    }
+  }
+
+  nav {
+    ul {
+      gap: 10px !important;
+      
+      li {
+        .nav-link {
+          font-size: 12px !important;
         }
       }
     }

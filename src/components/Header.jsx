@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'; // Importation des hooks React useEffect et useState
-import LogoHeaderBig from '../assets/images/logos/LogoHeaderBig.png'; // Importation du logo
+import LogoHeader from '../assets/images/logos/LogoHeader.png'; // Importation du logo
 
 // Déclaration du composant Header
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
         <div className="header">
             {/* Section du logo */}
             <div className="logo-header">
-                <a href="/"><img src={LogoHeaderBig} alt="Kasa Logo" /></a> {/* Lien vers l'accueil avec le logo */}
+                <a href="/"><img src={LogoHeader} alt="Kasa Logo" /></a> {/* Lien vers l'accueil avec le logo */}
             </div>
             
             {/* Navigation du menu */}

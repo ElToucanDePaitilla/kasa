@@ -5,12 +5,13 @@ import LogoFooter from '../assets/images/logos/LogoFooter.png';
 const Footer = () => {
     return (       
         <div className="footer">
-            <div class="logo-footer">
+            <div className="logo-footer">
                 <img src={LogoFooter} alt="Kasa Logo"/>              
             </div>
-            <p>&copy; 2023 Kasa. All rights reserved</p> 
+            <p className="footer-text">&copy; 2023 Kasa.<span className="line-break"> All rights reserved</span></p> 
         </div>  
     );
 };
 
 export default Footer;
+

@@ -8,23 +8,14 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-
-  &:nth-child(-n+3) {
-    margin-top: 50px;
-  }
-  
-  &:nth-last-child(-n+1) {
-    
-    margin-bottom: 50px;
-  }
+  margin-top: 0;
+  margin-bottom: 0;
 
   img {
     width: 340px;
     height: 340px;
     object-fit: cover;
   }
-
-  
 }
 
 .gradient-overlay {
@@ -51,3 +42,56 @@
   line-height: 25.67px;
   margin: 0;
 }
+
+@media (min-width: 1241px) {
+  .gallery-item:nth-child(-n+3) {
+    margin-top: 30px;
+  }
+  .gallery-item:nth-last-child(-n+1) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .gallery {
+    grid-template-columns: repeat(2, 340px);
+    gap: 60px 60px;
+  }
+
+  .gallery-item:nth-child(-n+2) {
+    margin-top: 30px;
+  }
+
+  .gallery-item:nth-last-child(-n+1) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 840px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+
+  .gallery-item {
+    width: 335px;
+    height: 255px;
+    margin: 0; /* Supprime toutes les marges */
+  }
+
+  /* Neutralisation des marges spécifiques */
+  .gallery-item:nth-child(-n+2) {
+    margin-top: 0;
+  }
+
+  .gallery-item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+
+

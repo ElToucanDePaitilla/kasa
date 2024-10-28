@@ -2,7 +2,7 @@
   position: relative;
   max-width: 1240px;
   margin: 0 auto 20px;
-  height: 223px;
+  height: 223px; // Hauteur par défaut
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
@@ -37,12 +37,48 @@
     z-index: 2; // Assurez-vous que le texte est au-dessus du fond sombre
     font-size: 48px; // Ajustez selon vos besoins
     font-family: "Helvetica", sans-serif;
-    color: #fff;
+    color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); // Ombre portée pour le texte
     -webkit-text-stroke: 2px #000; // Contour noir autour du texte
     text-stroke: 2px #000; // Pour les navigateurs supportant cette propriété
     letter-spacing: 1px;
     font-weight: bold;
+    padding-left: 100px; // Ajout de padding à gauche
+    padding-right: 100px; // Ajout de padding à droite
   }
 }
+
+// Media query pour les petits écrans (800px ou moins)
+@media (max-width: 840px) {
+  .banner {
+    text-align: left; // Passe l'alignement du texte à gauche
+    height: 111px; // Réduit la hauteur à 111px
+    margin: 0 auto 0;
+
+    h1 {
+      font-size: 24px; // Réduit la taille de la police du h1 à 24px
+      padding-left: 20px; // Réduit le padding à gauche pour les petits écrans
+      padding-right: 10px; // Réduit le padding à droite pour les petits écrans
+      
+      text-shadow: none; // Supprime l'ombre portée
+      -webkit-text-stroke: 0; // Supprime le contour noir
+      text-stroke: 0; // Supprime le contour pour les navigateurs supportant cette propriété
+    }
+  }
+
+  @media (max-width: 840px) {
+    .banner-text {
+        white-space: normal; // Permet la cassure de ligne sur les petits écrans
+    }
+
+    .line-break {
+        display: block; // Force la ligne suivante
+    }
+}
+
+
+}
+
+
+
 

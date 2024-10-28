@@ -1,19 +1,37 @@
-
-/* Footer Section */
 .footer {
-    text-align: center;
-    background-color: #000;
-    color: white;
-    height: 209px;
-    position: relative; /* Pour qu'il reste au bas du contenu */
-    margin-top: 20px; /* Ajoute un peu d'espace entre le contenu et le footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #000; 
+
+  .logo-footer {
+      margin-bottom: 10px;
   }
 
-.footer img {
-    width: 122px;
-    margin-top: 65px;
+  img {
+      max-width: 100px;
   }
 
-.footer p {
-  margin-top: 45px;
+  .footer-text {
+      color: #fff;
+      font-size: 14px;
+      white-space: nowrap; 
+      text-align: center;
+  }
+
+  .line-break {
+      display: inline;
+  }
+
+  @media (max-width: 840px) {
+      .footer-text {
+          white-space: normal; // Permet la cassure de ligne sur les petits écrans
+      }
+
+      .line-break {
+          display: block; // Force la ligne suivante
+      }
+  }
 }
+
