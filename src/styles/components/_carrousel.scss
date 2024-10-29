@@ -53,22 +53,8 @@
   @media (max-width: 840px) {
 
   .carrousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 255px;
-    margin: 0 auto;
-
-    
-      .carrousel-control {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-      }
-    
+        
       .prev {
         height: 20px;  
         width: 12px;  
@@ -83,16 +69,6 @@
     
       .carrousel-pagination {
         display: none;
-        position: absolute;
-        bottom: 10px;
-        right: 50%;
-        transform: translateX(50%);
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        background-color: rgba(0, 0, 0, 0.0);
-        padding: 20px;
-        border-radius: 5px;
       }
     }
   }
