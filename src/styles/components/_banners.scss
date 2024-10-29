@@ -36,7 +36,7 @@
     position: relative;
     z-index: 2; // Assurez-vous que le texte est au-dessus du fond sombre
     font-size: 48px; // Ajustez selon vos besoins
-    font-family: "Helvetica", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); // Ombre portée pour le texte
     -webkit-text-stroke: 2px #000; // Contour noir autour du texte
@@ -66,17 +66,9 @@
     }
   }
 
-  @media (max-width: 840px) {
-    .banner-text {
-        white-space: normal; // Permet la cassure de ligne sur les petits écrans
-    }
-
-    .line-break {
-        display: block; // Force la ligne suivante
-    }
-}
 
 
+  
 }
 
 

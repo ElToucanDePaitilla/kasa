@@ -9,6 +9,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-family-base;
 }
 
 body {
@@ -24,7 +25,11 @@ body {
   padding: 0 20px;
 }
 
-@media (max-width: 800px) {
+
+
+
+
+@media (max-width: 840px) {
   body {
     padding: 0 0;
   }
