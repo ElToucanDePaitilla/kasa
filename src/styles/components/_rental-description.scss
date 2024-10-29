@@ -2,7 +2,7 @@
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0 20px;
   box-sizing: border-box;
 
   .rental-header {
@@ -60,9 +60,6 @@
       flex-direction: column;
     }
   }
-
-  // ... Le reste du code reste inchangé ...
-
 }
 
 @media (max-width: 840px) {
