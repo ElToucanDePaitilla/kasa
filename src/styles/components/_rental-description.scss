@@ -6,8 +6,7 @@
   box-sizing: border-box;
 
   .rental-header {
-    display: flex;
-    flex-wrap: wrap;
+    @extend %flex-space-between;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 30px;
@@ -31,18 +30,17 @@
       }
 
       .rental-tags {
-        display: flex;
+        @extend %flex-wrap;
         gap: 10px;
-        flex-wrap: wrap;
+        
       }
     }
 
     .right-container {
+      @extend %flex-column;
+      align-items: flex-end;
       flex: 1 1 30%;
       min-width: 200px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
       gap: 10px;
     }
   }
@@ -54,10 +52,9 @@
     gap: 20px; 
 
     > div {
+      @extend %flex-column;
       flex: 1 1 calc(50% - 10px);
       min-width: 250px;
-      display: flex;
-      flex-direction: column;
     }
   }
 }

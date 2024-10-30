@@ -93,4 +93,10 @@
     flex-direction: column-reverse;
     align-items: center;
   }
+
+  %flex-column-end {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   

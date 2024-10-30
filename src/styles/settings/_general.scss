@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Global Styles */
+/* General Styles */
 html {
   background-color: #f2f2f2; /* Gris très pâle pour l'extérieur */
   overflow-y: scroll; /* Barre de défilement verticale toujours visible */
@@ -13,9 +13,7 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend %flex-column-center;
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: #333;
@@ -25,15 +23,10 @@ body {
   padding: 0 20px;
 }
 
-
-
-
-
 @media (max-width: 840px) {
   body {
     padding: 0 0;
   }
-
 }
 
 
