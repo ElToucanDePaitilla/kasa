@@ -1,23 +1,9 @@
-/* App.scss ou _general.scss */
-
-body {
-  display: flex;
-  justify-content: center; /* Centre tout horizontalement */
-}
-
 #root {
   width: 100%;
   max-width: 1440px; /* Largeur maximale pour tous les composants */
   margin: 0 auto; /* Centre le contenu */
   padding: 0 20px; /* Optionnel : pour ajouter un peu de padding latéral */
 }
-
-
-//.container {
-  //width: 100%;
-  //max-width: 1200px; /* Largeur maximale de votre choix pour le contenu */
-  //margin: 0 auto; /* Centre le contenu dans le conteneur */
-//}
 
 
 

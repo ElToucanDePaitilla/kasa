@@ -1,8 +1,5 @@
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-space-between;
   max-width: 1240px;
   margin: 30px auto;
 
@@ -14,8 +11,8 @@
 
   nav {
     ul {
+      @extend %flex-center;
       list-style: none;
-      display: flex;
       gap: 50px;
 
       li {
@@ -25,15 +22,38 @@
           color: black;
           font-weight: 500;
 
-          &:hover,
-          &.active {
-            text-decoration: underline;
-          }
+          @include hover-active;
         }
       }
     }
   }
 }
+
+@media (max-width: 840px) {
+  .header {
+    padding: 0;
+  }
+
+  .logo-header {
+    img {
+      width: 145px !important;
+      max-width: 145px;
+    }
+  }
+
+  nav {
+    ul {
+      gap: 10px !important;
+
+      li {
+        .nav-link {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+}
+
 
 @media (max-width: 840px) {
   .header {

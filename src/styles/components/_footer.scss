@@ -1,37 +1,36 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #000; 
-
-  .logo-footer {
+    @extend %flex-column-center !optional;
+ // Flex en colonne avec alignement centré horizontalement
+    padding: 20px;
+    background-color: #000;
+  
+    .logo-footer {
       margin-bottom: 10px;
-  }
-
-  img {
-      max-width: 100px;
-  }
-
-  .footer-text {
+  
+      img {
+        max-width: 100px;
+        height: auto; // Maintient le ratio d'aspect
+      }
+    }
+  
+    .footer-text {
       color: #fff;
       font-size: 14px;
-      white-space: nowrap; 
       text-align: center;
-  }
-
-  .line-break {
-      display: inline;
-  }
-
-  @media (max-width: 840px) {
-      .footer-text {
-          white-space: normal; // Permet la cassure de ligne sur les petits écrans
-      }
-
+  
       .line-break {
-          display: block; // Force la ligne suivante
+        display: inline;
+  
+        @media (max-width: 840px) {
+          display: block; // Force le passage à la ligne sur petits écrans
+        }
       }
-  }
+    }
+  
+    @media (max-width: 840px) {
+      .footer-text {
+        white-space: normal; // Permet le retour à la ligne sur petits écrans
+      }
+    }
 }
 
