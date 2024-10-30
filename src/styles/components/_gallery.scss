@@ -11,15 +11,15 @@
 
 }
 
-@media (max-width: 1240px) {
+@media (max-width: #{$laptops}) {
   .gallery {
-    max-width: 860px;
+    
     grid-template-columns: repeat(2, 340px);
     gap: 30px;
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: #{$tablets-phones}) {
   .gallery {
     grid-template-columns: repeat(1, 340px);
     background-color: #ffffff00;

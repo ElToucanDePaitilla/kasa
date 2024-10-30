@@ -23,7 +23,7 @@ body {
   padding: 0 20px;
 }
 
-@media (max-width: 840px) {
+@media (max-width: #{$tablets-phones}) {
   body {
     padding: 0 0;
   }

@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: #{$tablets-phones}) {
   .rental-description {
     padding: 10px;
 

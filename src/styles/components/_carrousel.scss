@@ -24,20 +24,21 @@
     z-index: 10;
   }
 
-  .prev {
-    height: 80px;  
-    width: 47px;  
-    left: 2%;
-    top: 50%;
-    transform: translateY(-50%);
+  .prev,
+  .next {
+    height: $xl-button-height;
+    width: $xl-button-width;
+    position: absolute;
+    top: $xl-button-position;
+    transform: translateY(-$xl-button-position);
   }
 
+  .prev {
+    left: $xl-button-offset;
+  }
+  
   .next {
-    height: 80px;  
-    width: 47px;   
-    right: 2%;
-    top: 50%;
-    transform: translateY(-50%);
+    right: $xl-button-offset;
   }
 
   .carrousel-pagination {
@@ -54,23 +55,26 @@
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: #{$tablets-phones}) {
   .carrousel-container {
     height: 255px;
     
-    .prev, .next {
-      height: 20px;  
-      width: 12px;  
-    }
-    
-    .prev {
-      left: 25px;
-    }
-    
+    .prev,
     .next {
-      right: 25px;
+      height: $xls-button-height;
+      width: $xls-button-width;
+      top: $xls-button-position;
+      transform: translateY(-$xls-button-position);
     }
-  
+
+    .prev {
+      left: $xls-button-offset;
+    }
+
+    .next {
+      right: $xls-button-offset;
+    }
+
     .carrousel-pagination {
       display: none;
     }

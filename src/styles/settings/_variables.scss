@@ -1,9 +1,7 @@
 //Globals colors
 $primary: #FF6060;
 
-
 //Background-color
-
 $bgc-html: #f2f2f2;
 $bgc-body: #ffffff;
 $bgc-gallery: #f6f6f6;
@@ -11,15 +9,13 @@ $bgc-primary: #FF6060;
 $bgc-primary-hover: darken($bgc-primary, 10%);
 $bgc-dropdown-content: #f5f5f5;
 $bgc-footer: #000000;
-
 $bgc-banner-after: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-
+$bgc-home-banner: rgba(0, 0, 0, 0.4);
 
 //Text color
 $color-on-dark: #ffffff;
 $color-on-light: #000000;
 $color-primary: #FF6060;
-
 
 //Shadow
 $text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
@@ -28,4 +24,33 @@ $carte-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une légère ombre p
 
 //Font family
 $font-family-base: montserrat;
+$font-family-title: 'Poppins', sans-serif;
+
+//Darkners
+
+//Carrousel buttons settings 1440px-841px
+$xl-button-height: 80px;
+$xl-button-width: 47px;
+$xl-button-position: 50%;
+$xl-button-offset: 2%;
+
+//Carrousel buttons settings max 840px
+$xls-button-height: 20px;
+$xls-button-width: 12px;
+$xls-button-position: 50%;
+$xls-button-offset: 7%;
+
+//Images
+$home-banner-img: url(../../assets/images/banner/ImageHeaderAbout.png);
+$about-banner-img: url(../../assets/images/banner/ImageHeaderHome.png);
+
+//Media queries
+$laptops: 1240px;
+$tablets-phones: 840px;
+
+//Media queries breakpoints
+$breakpoint-desktop: 1240px;
+$breakpoint-tablet: 840px;
+$breakpoint-mobile: 480px;
+
 

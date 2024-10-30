@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: #{$tablets-phones}) {
   .dropdown {
     .dropdown-btn {
       font-size: 12px;
