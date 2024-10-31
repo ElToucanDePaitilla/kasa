@@ -49,7 +49,7 @@
     /* Ajout de padding réduit lorsque caché pour éviter les "sauts" */
     &.show {
       max-height: 500px; /* Ajustez selon le contenu attendu */
-      padding: 15px 50px; /* Ajout de padding lorsque visible */
+      padding: 15px 20px; /* Ajout de padding lorsque visible */
     }
 
     li {

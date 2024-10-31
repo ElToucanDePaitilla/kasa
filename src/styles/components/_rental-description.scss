@@ -1,6 +1,7 @@
 .rental-description {
   max-width: 1240px;
   width: 100%;
+  margin-top: 0px;
   margin: 0 auto;
   padding: 20px 0 20px;
   box-sizing: border-box;
@@ -20,6 +21,7 @@
         color: #FF6060;
         font-weight: 500;
         font-size: clamp(18px, 4vw, 36px);
+        margin-top: 6px;
         margin-bottom: 10px;
       }
 
@@ -49,11 +51,11 @@
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; 
+    gap: 80px; 
 
     > div {
       @extend %flex-column;
-      flex: 1 1 calc(50% - 10px);
+      flex: 1 1 calc(50% - 80px);
       min-width: 250px;
     }
   }
@@ -97,6 +99,7 @@
 
     .collapse-container {
       flex-direction: column;
+      gap: 0px;
 
       > div {
         width: 100%;

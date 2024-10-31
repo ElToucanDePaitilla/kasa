@@ -9,11 +9,19 @@
   background-color: white;
   margin-top: 0;
   margin-bottom: 0;
+  transition: transform 0.3s ease; // Ajoutez cette ligne pour une transition fluide
 
   img {
     width: 340px;
     height: 340px;
     object-fit: cover;
+    transition: transform 0.3s ease; // Ajoutez cette ligne pour une transition fluide sur l'image
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.15); // Zoom de 5% sur l'image au survol
+    }
   }
 }
 
