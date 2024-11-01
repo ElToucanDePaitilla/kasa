@@ -19,7 +19,7 @@
         .nav-link {
           font-size: 24px;
           text-decoration: none;
-          color: black;
+          color: $color-on-light;
           font-weight: 500;
 
           @include hover-active;
@@ -34,48 +34,16 @@
     padding: 0;
   }
 
-  .logo-header {
-    img {
-      width: 145px !important;
-      max-width: 145px;
-    }
+  .logo-header img {
+    width: 145px !important;
+    max-width: 145px;
   }
 
-  nav {
-    ul {
-      gap: 10px !important;
+  nav ul {
+    gap: 10px !important;
 
-      li {
-        .nav-link {
-          font-size: 12px !important;
-        }
-      }
-    }
-  }
-}
-
-
-@media (max-width: 840px) {
-  .header {
-    padding: 0 0;
-  }
-
-  .logo-header {
-    img {
-      width: 145px !important; 
-      max-width: 145px; 
-    }
-  }
-
-  nav {
-    ul {
-      gap: 10px !important;
-      
-      li {
-        .nav-link {
-          font-size: 12px !important;
-        }
-      }
+    li .nav-link {
+      font-size: 12px !important;
     }
   }
 }

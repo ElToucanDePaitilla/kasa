@@ -1,39 +1,37 @@
+@import "../globals/_settings";
+
 .footer {
     @extend %flex-column-center !optional;
- // Flex en colonne avec alignement centré horizontalement
     padding: 50px 200px 25px;
-    background-color: #000;
-  
-    .logo-footer {
-      margin-bottom: 30px;
-  
-      img {
-        max-width: 100px;
-        height: auto; // Maintient le ratio d'aspect
-      }
-    }
-  
-    .footer-text {
-      color: #fff;
-      font-size: 14px;
-      text-align: center;
-      margin-left: 0;
-      margin-right: 0;
-  
-      .line-break {
-        display: inline;
-  
-        @media (max-width: 840px) {
-          display: block; // Force le passage à la ligne sur petits écrans
-        }
-      }
-    }
-  
+    background-color: $bgc-footer;
 
-    @media (max-width: 840px) {
-      .footer-text {
-        white-space: normal; // Permet le retour à la ligne sur petits écrans
-      }
+    .logo-footer {
+        margin-bottom: 30px;
+
+        img {
+            max-width: 100px;
+            height: auto; // Maintient le ratio d'aspect
+        }
+    }
+
+    .footer-text {
+        color: $color-on-dark;
+        font-size: 14px;
+        text-align: center;
+        margin: 0; // Groupement de margin-left et margin-right
+
+        .line-break {
+            display: inline;
+
+            @media (max-width: #{$tablets-phones}) {
+                display: block; // Force le passage à la ligne sur petits écrans
+            }
+        }
+    }
+
+    @media (max-width: #{$tablets-phones}) {
+        .footer-text {
+            white-space: normal; // Permet le retour à la ligne sur petits écrans
+        }
     }
 }
-

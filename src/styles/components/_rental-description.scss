@@ -1,14 +1,12 @@
 .rental-description {
   max-width: 1240px;
   width: 100%;
-  margin-top: 0px;
   margin: 0 auto;
-  padding: 20px 0 20px;
+  padding: 20px 0;
   box-sizing: border-box;
 
   .rental-header {
     @extend %flex-space-between;
-    justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 30px;
 
@@ -16,25 +14,22 @@
       flex: 1 1 70%;
       min-width: 200px;
       text-align: left;
-     
+
       h2 {
-        color: #FF6060;
+        color:$color-primary;
         font-weight: 500;
         font-size: clamp(18px, 4vw, 36px);
-        margin-top: 6px;
-        margin-bottom: 10px;
+        margin: 6px 0 10px;
       }
 
       p {
         font-size: clamp(14px, 2vw, 18px);
-        margin-top: 0;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
       }
 
       .rental-tags {
         @extend %flex-wrap;
         gap: 10px;
-        
       }
     }
 
@@ -48,10 +43,10 @@
   }
 
   .collapse-container {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 80px; 
+    gap: 80px;
 
     > div {
       @extend %flex-column;
@@ -68,9 +63,12 @@
     .rental-header {
       flex-direction: column;
 
-      .left-container {
+      .left-container,
+      .right-container {
         width: 100%;
+      }
 
+      .left-container {
         h2 {
           font-size: 18px;
           line-height: 25.67px;
@@ -90,7 +88,6 @@
       }
 
       .right-container {
-        width: 100%;
         flex-direction: row-reverse;
         justify-content: space-between;
         margin-top: 20px;
@@ -99,7 +96,7 @@
 
     .collapse-container {
       flex-direction: column;
-      gap: 0px;
+      gap: 0;
 
       > div {
         width: 100%;

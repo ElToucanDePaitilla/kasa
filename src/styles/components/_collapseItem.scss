@@ -1,12 +1,9 @@
-/* Section globale pour organiser le contenu */
 .content {
   max-width: 1023px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 20px;
 }
 
-/* Styles des boutons dropdown */
 .dropdown {
   margin-bottom: 20px;
 
@@ -17,8 +14,8 @@
   .dropdown-btn {
     @extend %flex-space-between;
     width: 100%;
-    background-color: #ff6060;
-    color: white;
+    background-color: $bgc-primary;
+    color: $color-on-dark;
     padding: 15px;
     border: none;
     border-radius: 10px;
@@ -29,7 +26,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #ff4040;
+      background-color: $color-primary-hover;
     }
   }
 
@@ -37,23 +34,22 @@
     max-height: 0;
     overflow: hidden;
     padding: 0 15px;
-    background-color: #f5f5f5;
-    border-radius: 0px;
+    background-color: $bgc-dropdown-content;
+    border-radius: 0;
     margin-top: 5px;
     font-size: 18px;
     font-weight: 400;
     line-height: 25.67px;
-    transition: max-height 0.5s ease, padding 0.5s ease; /* Transition fluide sur max-height et padding */
+    transition: max-height 0.5s ease, padding 0.5s ease;
     text-align: justify;
 
-    /* Ajout de padding réduit lorsque caché pour éviter les "sauts" */
     &.show {
-      max-height: 500px; /* Ajustez selon le contenu attendu */
-      padding: 15px 20px; /* Ajout de padding lorsque visible */
+      max-height: 500px;
+      padding: 15px 20px;
     }
 
     li {
-      list-style-type: none;
+      list-style: none;
     }
   }
 

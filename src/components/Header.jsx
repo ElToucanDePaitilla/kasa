@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'; // Importation des hooks React useEffect et useState
-import LogoHeader from '../assets/images/logos/LogoHeader.png'; // Importation du logo
+import LogoHeader from '../assets/images/logos/LogoHeader.png';
 
 // Déclaration du composant Header
 const Header = () => {
+
+
     // État pour suivre l'onglet actif dans le menu de navigation
-    const [activeTab, setActiveTab] = useState('');
+    const [activeTab, setActiveTab] = useState('');useState('') //useState(''): Déclare une variable d'état, activeTab, qui stocke l'onglet actif.
 
     // Hook useEffect pour mettre à jour l'onglet actif en fonction de l'URL actuelle
-    useEffect(() => {
+    useEffect(() => {//useEffect(...) : Hook pour géréer les effets de bord, qui s'exécute après le rendu initial pour définir l'onglet actif en fonction de l'URL actuelle, ce qui permet de savoir si l'utilisateur se trouve sur la page d'accueil ou la page "À Propos".
         const currentPath = window.location.pathname; // Obtient le chemin de l'URL actuelle
 
         // Détermine l'onglet actif selon le chemin
@@ -16,19 +18,17 @@ const Header = () => {
         } else if (currentPath === '/about') {
             setActiveTab('apropos'); // Définit "apropos" comme onglet actif si le chemin est la page "À Propos"
         }
-    }, []); // Le tableau de dépendances vide [] signifie que ce code s'exécute uniquement lors du montage initial du composant
+    }, []); // Le tableau de dépendances vide [] signifie que ce code s'exécute uniquement (une seule fois) lors du montage initial du composant
 
     return (
         <div className="header">
-            {/* Section du logo */}
+           
             <div className="logo-header">
                 <a href="/"><img src={LogoHeader} alt="Kasa Logo" /></a> {/* Lien vers l'accueil avec le logo */}
             </div>
             
-            {/* Navigation du menu */}
             <nav>
                 <ul>
-                    {/* Lien vers la page Accueil */}
                     <li>
                         <a
                             href="/"
@@ -38,7 +38,6 @@ const Header = () => {
                         </a>
                     </li>
 
-                    {/* Lien vers la page À Propos */}
                     <li>
                         <a
                             href="/about"
@@ -53,4 +52,4 @@ const Header = () => {
     );
 };
 
-export default Header; // Exportation du composant pour l'utiliser dans d'autres parties de l'application
+export default Header;

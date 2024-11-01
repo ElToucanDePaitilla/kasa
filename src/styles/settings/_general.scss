@@ -1,8 +1,8 @@
-@charset "UTF-8";
-/* General Styles */
+@charset "UTF-8";//Cette directive rend le fichier CSS autonome du html
+
 html {
-  background-color: #f2f2f2; /* Gris très pâle pour l'extérieur */
-  overflow-y: scroll; /* Barre de défilement verticale toujours visible */
+  background-color: $bgc-html;
+  overflow-y: scroll;
 }
 
 * {
@@ -15,8 +15,7 @@ html {
 body {
   @extend %flex-column-center;
   font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
+  background-color: $bgc-body;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;

@@ -1,9 +1,9 @@
 .owner {
   @extend %flex-center-vertical; /* Centre le contenu verticalement */
-  margin-top: 0px;
+  margin-top: 0;
 
   &__name {
-    color: #FF6060;
+    color: $color-primary;
     font-size: 18px;
     line-height: 25.67px;
     font-weight: 500;
@@ -20,28 +20,8 @@
 }
 
 @media (max-width: #{$tablets-phones}) {
-  
-  .owner {
-    
-    &__name {
-      color: #FF6060;
-      font-size: 18px;
-      line-height: 25.67px;
-      font-weight: 500;
-      margin-right: 10px; /* Espacement entre name et picture */
-      text-align: right;
-    }
-  
-    &__picture {
-      border-radius: 50%;
-      width:32px;
-      height: 32px;
-      margin-right: 0;
-    }
+  .owner__picture {
+    width: 32px;
+    height: 32px;
   }
-
-
-
 }
-
-  

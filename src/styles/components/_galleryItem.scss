@@ -5,11 +5,9 @@
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  margin-top: 0;
-  margin-bottom: 0;
-  transition: transform 0.3s ease; // Ajoutez cette ligne pour une transition fluide
+  box-shadow: $gallery-item-box-shadow;
+  margin: 0; // Consolidation des marges haut et bas
+  transition: transform 0.3s ease;
 
   img {
     width: 340px;
@@ -18,10 +16,8 @@
     transition: transform 0.3s ease; // Ajoutez cette ligne pour une transition fluide sur l'image
   }
 
-  &:hover {
-    img {
-      transform: scale(1.15); // Zoom de 5% sur l'image au survol
-    }
+  &:hover img {
+    transform: scale(1.15); // Zoom sur l'image au survol
   }
 }
 
@@ -31,23 +27,23 @@
   left: 0;
   right: 0;
   height: 30%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  background: $bg-gallery-item-gradient-overlay;
 }
 
 .gallery-item-title-overlay {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  color: white;
+  color: $color-on-dark;
   z-index: 1;
   text-align: left;
-}
 
-.gallery-item-title-overlay h3 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 25.67px;
-  margin: 0;
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+    margin: 0;
+  }
 }
 
 @media (min-width: 1241px) {
@@ -62,13 +58,12 @@
 @media (max-width: 1240px) {
   .gallery {
     grid-template-columns: repeat(2, 340px);
-    gap: 60px 60px;
+    gap: 60px;
   }
 
   .gallery-item:nth-child(-n+2) {
     margin-top: 30px;
   }
-
   .gallery-item:nth-last-child(-n+1) {
     margin-bottom: 40px;
   }
@@ -79,24 +74,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     gap: 20px;
   }
 
   .gallery-item {
     width: 335px;
     height: 255px;
-    margin: 0; /* Supprime toutes les marges */
+    margin: 0;
   }
 
-  /* Neutralisation des marges spécifiques */
-  .gallery-item:nth-child(-n+2) {
-    margin-top: 0;
-  }
-
+  // Neutralisation des marges spécifiques
+  .gallery-item:nth-child(-n+2),
   .gallery-item:nth-last-child(-n+2) {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 

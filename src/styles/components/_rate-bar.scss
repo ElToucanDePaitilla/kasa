@@ -1,7 +1,7 @@
 .rate-bar {
   @extend %flex-end;
   flex-wrap: wrap;
-  
+
   img {
     width: 35px;
     height: 35px;
@@ -10,7 +10,7 @@
   }
 
   @media (max-width: #{$tablets-phones}) {
-      img {
+    img {
       width: 18px;
       height: 18px;
     }

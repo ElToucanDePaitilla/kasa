@@ -3,17 +3,15 @@
   grid-template-columns: repeat(3, 340px);
   gap: 50px;
   justify-content: center;
-  background-color: #F6F6F6;
+  background-color: $bgc-gallery;
   max-width: 1240px;
   border-radius: 25px;
   margin: 56px auto;
   padding: 20px;
-
 }
 
 @media (max-width: #{$laptops}) {
   .gallery {
-    
     grid-template-columns: repeat(2, 340px);
     gap: 30px;
   }
@@ -21,8 +19,8 @@
 
 @media (max-width: #{$tablets-phones}) {
   .gallery {
-    grid-template-columns: repeat(1, 340px);
-    background-color: #ffffff00;
+    grid-template-columns: 1fr; // Simplification en utilisant 1fr au lieu de repeat(1, 340px)
+    background-color: transparent; // Utilisation de transparent au lieu de #ffffff00
   }
 }
 
