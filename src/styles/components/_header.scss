@@ -29,7 +29,19 @@
   }
 }
 
-@media (max-width: #{$tablets-phones}) {
+@media (max-width: #{$tablets}) {
+  .header {
+    margin: 30px 10px;
+
+    .logo-header  {
+      img {
+      margin-left: 20px;
+      width: 145px;}
+    }
+  }
+}
+
+@media (max-width: #{$small-mobiles}) {
   .header {
     margin: 30px 10px;
 
@@ -56,4 +68,7 @@ margin-right: 20px;
     }
   }
 }
+
+
+
 

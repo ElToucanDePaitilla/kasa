@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: #{$tablets-phones}) {
+@media (max-width: #{$tablets}) {
   .rental-description {
     padding: 10px;
 
@@ -97,7 +97,6 @@
     .collapse-container {
       flex-direction: column;
       gap: 0;
-
       > div {
         width: 100%;
       }

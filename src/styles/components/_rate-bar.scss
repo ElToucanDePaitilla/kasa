@@ -9,7 +9,7 @@
     margin-top: 5px;
   }
 
-  @media (max-width: #{$tablets-phones}) {
+  @media (max-width: #{$tablets}) {
     img {
       width: 18px;
       height: 18px;

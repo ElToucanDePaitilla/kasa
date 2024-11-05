@@ -19,11 +19,14 @@
   }
 }
 
-@media (max-width: #{$tablets-phones}) {
+@media (max-width: #{$tablets}) {
   .gallery {
     grid-template-columns: 1fr; // Simplification en utilisant 1fr au lieu de repeat(1, 340px)
     background-color: transparent; // Utilisation de transparent au lieu de #ffffff00
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    gap: 20px;
   }
 }

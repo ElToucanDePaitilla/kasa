@@ -2,7 +2,10 @@
 
 .footer {
     @extend %flex-column-center !optional;
-    padding: 50px 25px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-right: -20px;
+    margin-left: -20px;
     background-color: $bgc-footer;
     width: auto;
 
@@ -24,13 +27,13 @@
         .line-break {
             display: inline;
 
-            @media (max-width: #{$tablets-phones}) {
+            @media (max-width: #{$tablets}) {
                 display: block; // Force le passage à la ligne sur petits écrans
             }
         }
     }
 
-    @media (max-width: #{$tablets-phones}) {
+    @media (max-width: #{$tablets}) {
         
         .footer-text {
             white-space: normal; // Permet le retour à la ligne sur petits écrans
