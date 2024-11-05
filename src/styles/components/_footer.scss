@@ -2,14 +2,15 @@
 
 .footer {
     @extend %flex-column-center !optional;
-    padding: 50px 200px 25px;
+    padding: 50px 25px;
     background-color: $bgc-footer;
+    width: auto;
 
     .logo-footer {
         margin-bottom: 30px;
 
         img {
-            max-width: 100px;
+            width: 100px;
             height: auto; // Maintient le ratio d'aspect
         }
     }
@@ -30,6 +31,7 @@
     }
 
     @media (max-width: #{$tablets-phones}) {
+        
         .footer-text {
             white-space: normal; // Permet le retour à la ligne sur petits écrans
         }

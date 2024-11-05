@@ -22,12 +22,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $bgc-home-banner;
+    background-color: $bgc-about-banner;
     z-index: 1;
   }
 
   &.banner-home::before {
-    background-color: $bgc-home-banner-after;
+    background-color: $bgc-home-banner;
   }
 
   h1 {
@@ -40,24 +40,50 @@
     font-weight: bold;
     text-shadow: $text-shadow;
     -webkit-text-stroke: $-webkit-text-stroke;
-    padding: 0 100px;
+  
   }
 }
+
+.banner h1 br {
+  display: none;
+}
+
 
 @media (max-width: #{$tablets-phones}) {
   .banner {
     text-align: left;
     height: 111px;
-    margin-bottom: 0;
+    margin: 0 20px;
 
     h1 {
       font-size: 24px;
-      padding: 0 10px 0 20px;
+      padding: 0px 10px 0px 20px;
       text-shadow: none;
       -webkit-text-stroke: 0;
     }
   }
 }
+
+@media (max-width: #{$mobiles}) {
+  .banner {
+    text-align: left;
+    margin: 0 20px;
+    /*
+    margin-top : 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    */
+    h1 {
+      padding: 0px 10px 0px 20px;
+    }
+  }
+
+
+  
+}
+
+
 
 
 

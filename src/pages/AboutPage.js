@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import imageAbout from "../assets/images/banner/ImageHeaderAbout.png";
 import CollapseItem from "../components/CollapseItem";
+import imageAbout from "../assets/images/banner/ImageHeaderAbout.png";
 import collapsesData from '../datas/collapses-text.json'; // Importer les données JSON
 
 const AboutPage = () => {

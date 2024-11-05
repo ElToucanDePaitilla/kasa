@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 // On importe React et le hook useState depuis la bibliothèque React.
-
 import nextIcon from "../assets/images/carrousel/next.png";
 import previousIcon from "../assets/images/carrousel/previous.png";
 // On importe les icônes "next" et "previous" pour les boutons de navigation du carrousel.

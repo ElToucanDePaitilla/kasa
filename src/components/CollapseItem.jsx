@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 // Importation de React ainsi que du hook useState depuis la bibliothèque React.
-
 import OpenedClosedIcon from '../assets/images/collapse/OpenedClosed.png';
 // Importation de l'icône qui sera utilisée pour indiquer l'état ouvert/fermé du composant CollapseItem.
 

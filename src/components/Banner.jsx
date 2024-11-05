@@ -1,7 +1,6 @@
 // Banner.jsx
-
 import React from "react";
-import "../styles/components/_banners.scss";
+
 
 // Déclaration du composant Banner qui reçoit trois props : imageSrc, title, et bannerType
 const Banner = ({ imageSrc, title, bannerType }) => {

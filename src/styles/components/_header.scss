@@ -31,19 +31,28 @@
 
 @media (max-width: #{$tablets-phones}) {
   .header {
-    padding: 0;
-  }
+    margin: 30px 10px;
 
-  .logo-header img {
-    width: 145px !important;
-    max-width: 145px;
-  }
+    .logo-header  {
+      img {
+      margin-left: 20px;
+      width: 145px;}
+    }
 
-  nav ul {
-    gap: 10px !important;
+    nav {
+margin-right: 20px;
 
-    li .nav-link {
-      font-size: 12px !important;
+      ul {
+        gap: 10px;
+  
+        li {
+          .nav-link {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
     }
   }
 }

@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <Banner imageSrc={imageHome} title="Chez vous, partout et ailleurs " bannerType="home" /> {/* Classe 'home' */}
+      <Banner imageSrc={imageHome} title="Chez vous, partout et ailleurs" bannerType="home" /> {/* Classe 'home' */}
       <Gallery />
       <Footer />
     </div>

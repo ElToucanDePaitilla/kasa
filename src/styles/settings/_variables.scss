@@ -6,9 +6,8 @@ $bgc-primary: #FF6060;
 $bgc-primary-hover: darken($bgc-primary, 10%);
 $bgc-dropdown-content: #f5f5f5;
 $bgc-footer: #000000;
-$bgc-banner-after: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-$bgc-home-banner: rgba(0, 0, 0, 0.4);
-$bgc-home-banner-after: rgba(0, 0, 0, 0.6);
+$bgc-about-banner: rgba(0, 0, 0, 0.4);
+$bgc-home-banner: rgba(0, 0, 0, 0.6);
 $bgc-caroussel-pagination: rgba(0, 0, 0, 0.0);
 
 //Text color
@@ -21,7 +20,7 @@ $-webkit-text-stroke: 2px #000000;
 //Shadow
 $text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 $banner-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-$carte-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une légère ombre pour plus de visibilité */
+$carte-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 $gallery-item-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 //Font family
@@ -43,13 +42,10 @@ $xls-button-width: 12px;
 $xls-button-position: 50%;
 $xls-button-offset: 7%;
 
-//Images
-$home-banner-img: url(../../assets/images/banner/ImageHeaderHome.png);
-$about-banner-img: url(../../assets/images/banner/ImageHeaderHome.png);
-
 //Media queries
 $laptops: 1240px;
 $tablets-phones: 840px;
+$mobiles: 480px;
 
 //Media queries breakpoints
 $breakpoint-desktop: 1240px;

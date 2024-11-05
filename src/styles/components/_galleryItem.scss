@@ -56,10 +56,21 @@
 }
 
 @media (max-width: 1240px) {
-  .gallery {
-    grid-template-columns: repeat(2, 340px);
-    gap: 60px;
+
+  .gallery-item {
+    img {
+      
+    }
   }
+
+
+
+
+
+
+
+
+
 
   .gallery-item:nth-child(-n+2) {
     margin-top: 30px;
@@ -70,18 +81,15 @@
 }
 
 @media (max-width: #{$tablets-phones}) {
-  .gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
-  }
 
   .gallery-item {
-    width: 335px;
+    width: 100%;
     height: 255px;
     margin: 0;
+
+    img {
+      width: 100%;
+    }
   }
 
   // Neutralisation des marges spécifiques
