@@ -14,7 +14,6 @@
   .gallery {
     grid-template-columns: repeat(2, 340px);
     gap: 30px;
-  }
 }
 
 @media (max-width: #{$tablets-phones}) {
@@ -23,9 +22,4 @@
     background-color: transparent; // Utilisation de transparent au lieu de #ffffff00
   }
 }
-
-
-
-
-
-
+}
