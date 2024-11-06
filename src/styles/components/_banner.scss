@@ -36,9 +36,13 @@
     color: #ffffff;
     letter-spacing: 1px;
     font-weight: bold;
-    text-shadow: $text-shadow;
-    -webkit-text-stroke: $-webkit-text-stroke;
-
+    //pour réaliser un text-stroke et ajouter une ombre / compatible avec tous les navigateurs
+    text-shadow:   
+    $text-stroke1, //détourage 1 
+    $text-stroke2, //détourage 2 
+    $text-stroke3, //détourage 3 
+    $text-shade;   //Ombre du texte
+    
     .title-break {
       display: inline;
       @media (max-width: #{$xsmall-mobiles}) { 
@@ -51,6 +55,7 @@
 // Media query pour tablettes
 @media (max-width: #{$tablets}) {
   .banner {
+    border-radius: 10px;
     text-align: left;
     height: 111px;
     margin: 0 20px;
@@ -69,7 +74,8 @@
   .banner {
     text-align: left;
     margin: 0 0 20px 10px;
-
+    box-shadow: none;
+ 
     h1 {
       padding: 0px 10px 0px 20px;
     }
@@ -78,9 +84,11 @@
 
 // Media query pour très petits mobiles (xsmall)
 @media (max-width: #{$xsmall-mobiles}) {
+
   .banner h1 {
-    transform: translateX(-20px);
+    transform: translateX(-25px); //Callé pour permettre un affichage sur un écran de 325px de width
   }
+
 }
 
 
