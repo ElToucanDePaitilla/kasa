@@ -13,7 +13,7 @@ const Banner = ({ imageSrc, title, bannerType }) => {
       style={{ backgroundImage: `url(${imageSrc})` }}
     >
       {/* Titre de la bannière */}
-      <h1>
+      <h1 className={`${bannerType}-title`}>
         {title} {/* Texte du titre de la bannière */}
       </h1> 
 

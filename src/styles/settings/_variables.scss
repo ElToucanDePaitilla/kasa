@@ -24,7 +24,7 @@ $carte-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 $gallery-item-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 //Font family
-$font-family-base: montserrat;
+$font-family-base:  'Montserrat', sans-serif;
 $font-family-title: 'Poppins', sans-serif;
 
 //Gradient-overlay
@@ -42,9 +42,10 @@ $xls-button-width: 12px;
 $xls-button-position: 50%;
 $xls-button-offset: 7%;
 
-//Media queries breakpoints
+//Media queries / breakpoints
 $laptops: 1240px;
 $tablets: 840px;
 $small-mobiles: 576px;
+$xsmall-mobiles: 500px;
 
 

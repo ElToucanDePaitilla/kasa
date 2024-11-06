@@ -45,11 +45,12 @@
   }
 }
 
-@media (min-width: 1241px) {
-  .gallery-item:nth-child(-n+3) {
-    margin-top: 30px;
+@media (min-width: "#{$laptops}") {
+ 
+ .gallery-item:nth-last-child(2) {
+    margin-bottom: 40px;
   }
-  .gallery-item:nth-last-child(-n+1) {
+ .gallery-item:nth-last-child(-n+1) {
     margin-bottom: 40px;
   }
 }
@@ -64,12 +65,7 @@
       width: 100%;
     }
   }
-  .gallery-item:nth-child(-n+2) {
-    margin-top: 30px;
-  }
-  .gallery-item:nth-last-child(-n+1) {
-    margin-bottom: 40px;
-  }
+
 }
 
 @media (max-width: #{$tablets}) {

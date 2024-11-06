@@ -1,3 +1,5 @@
+@import "../globals/_settings";
+
 .banner {
   position: relative;
   max-width: 1240px;
@@ -32,23 +34,21 @@
     position: relative;
     z-index: 2;
     font-size: 48px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #ffffff;
     letter-spacing: 1px;
     font-weight: bold;
     text-shadow: $text-shadow;
     -webkit-text-stroke: $-webkit-text-stroke;
-
-    .title-break {
-      display: inline;
-      @media (max-width: #{$xsmall-mobiles}) { 
-        display: block; // Force le passage à la ligne sur petits écrans
-      }
-    }
+  
   }
 }
 
-// Media query pour tablettes
+.banner h1 br {
+  display: none;
+}
+
+
 @media (max-width: #{$tablets}) {
   .banner {
     text-align: left;
@@ -64,7 +64,6 @@
   }
 }
 
-// Media query pour petits mobiles
 @media (max-width: #{$small-mobiles}) {
   .banner {
     text-align: left;
@@ -75,14 +74,6 @@
     }
   }
 }
-
-// Media query pour très petits mobiles (xsmall)
-@media (max-width: #{$xsmall-mobiles}) {
-  .banner h1 {
-    transform: translateX(-20px);
-  }
-}
-
 
 
 
