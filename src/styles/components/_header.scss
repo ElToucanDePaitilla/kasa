@@ -31,32 +31,34 @@
 
 @media (max-width: #{$tablets}) {
   .header {
-    margin: 30px 10px;
+    margin: 30px 20px 30px 10px;
 
-    .logo-header  {
+    .logo-header {
       img {
-      margin-left: 20px;
-      width: 145px;}
+        margin-left: 10px;
+        width: 145px;
+      }
     }
   }
 }
 
 @media (max-width: #{$small-mobiles}) {
   .header {
-    margin: 30px 10px;
+    margin: 30px 10px 25px 10px;  // Marges uniformes à gauche et droite pour éviter les valeurs négatives
 
-    .logo-header  {
+    .logo-header {
       img {
-      margin-left: 20px;
-      width: 145px;}
+        margin-left: 0;
+        width: 145px;
+      }
     }
 
     nav {
-margin-right: 20px;
+      margin-right: 0;
 
       ul {
         gap: 10px;
-  
+
         li {
           .nav-link {
             text-transform: uppercase;

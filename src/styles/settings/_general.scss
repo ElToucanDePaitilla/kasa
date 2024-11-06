@@ -24,9 +24,17 @@ body {
 
 @media (max-width: #{$tablets}) {
   body {
-    padding: 0 0;
+    padding: 0 20px;
   }
 }
+
+@media (max-width: #{$small-mobiles}) {
+  body {
+      padding: 0 10px;
+  }
+}
+
+
 
 
 
