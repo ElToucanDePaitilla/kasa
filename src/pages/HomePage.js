@@ -12,9 +12,9 @@ const HomePage = () => {
       <Banner 
       imageSrc={imageHome}
       title={
-        <h1>
+        <div>
             Chez vous,<span className="title-break"> partout et ailleurs</span>
-        </h1>
+        </div>
       }
       bannerType="home" /> {/* Classe 'home' */}
       <Gallery />
