@@ -1,41 +1,37 @@
-@import "../globals/_settings";
-
 .footer {
     @extend %flex-column-center !optional;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    margin-right: -20px;
-    margin-left: -20px;
+    padding: 50px 20px 30px;
     background-color: $bgc-footer;
     width: auto;
-
+  
     .logo-footer {
-        margin-bottom: 30px;
-
-        img {
-            width: 100px;
-            height: auto;
-        }
+      margin-bottom: 30px;
+  
+      img {
+        width: 100px;
+        height: auto;
+      }
     }
-
+  
     .footer-text {
-        color: $color-on-dark;
-        font-size: 14px;
-        text-align: center;
-        margin: 0;
-
-        .line-break {
-            display: inline;
-
-            @media (max-width: #{$small-mobiles}) {
-                display: block; // Force le passage à la ligne sur petits écrans
-            }
+      color: $color-on-dark;
+      font-size: 14px;
+      text-align: center;
+      margin: 0;
+  
+      .line-break {
+        display: inline;
+  
+        @media (max-width: #{$small-mobiles}) {
+          display: block; // Force le passage à la ligne sur petits écrans
         }
+      }
     }
-
+  
     @media (max-width: #{$small-mobiles}) {
-        .footer-text {
-            white-space: normal; // Permet le retour à la ligne sur petits écrans
-        }
+      .footer-text {
+        white-space: normal; // Permet le retour à la ligne sur petits écrans
+      }
     }
-}
+  }
+  

@@ -36,15 +36,13 @@
     color: #ffffff;
     letter-spacing: 1px;
     font-weight: bold;
-    //pour réaliser un text-stroke et ajouter une ombre / compatible avec tous les navigateurs
-    text-shadow:   
-    $text-stroke1, //détourage 1 
-    $text-stroke2, //détourage 2 
-    $text-stroke3, //détourage 3 
-    $text-shade;   //Ombre du texte
-    
+
+    // pour text-stroke et ombre: compatible tous navigateurs
+    text-shadow: $text-stroke1, $text-stroke2, $text-stroke3, $text-shade;
+
     .title-break {
       display: inline;
+
       @media (max-width: #{$xsmall-mobiles}) { 
         display: block; // Force le passage à la ligne sur petits écrans
       }
@@ -52,7 +50,6 @@
   }
 }
 
-// Media query pour tablettes
 @media (max-width: #{$tablets}) {
   .banner {
     border-radius: 10px;
@@ -62,39 +59,27 @@
 
     h1 {
       font-size: 24px;
-      padding: 0px 10px 0px 20px;
+      padding: 0 10px 0 20px;
       text-shadow: none;
       -webkit-text-stroke: 0;
     }
   }
 }
 
-// Media query pour petits mobiles
 @media (max-width: #{$small-mobiles}) {
   .banner {
     text-align: left;
     margin: 0 0 20px 10px;
     box-shadow: none;
- 
+
     h1 {
-      padding: 0px 10px 0px 20px;
+      padding: 0 10px 0 20px;
     }
   }
 }
 
-// Media query pour très petits mobiles (xsmall)
 @media (max-width: #{$xsmall-mobiles}) {
-
   .banner h1 {
-    transform: translateX(-25px); //Callé pour permettre un affichage sur un écran de 325px de width
+    transform: translateX(-25px); // Calé pour affichage sur écran de 320px minimum
   }
-
 }
-
-
-
-
-
-
-
-

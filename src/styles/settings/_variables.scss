@@ -1,4 +1,4 @@
-//Background-color
+//Background Colors
 $bgc-html: #f2f2f2;
 $bgc-body: #ffffff;
 $bgc-gallery: #f6f6f6;
@@ -8,48 +8,55 @@ $bgc-dropdown-content: #f5f5f5;
 $bgc-footer: #000000;
 $bgc-about-banner: rgba(0, 0, 0, 0.4);
 $bgc-home-banner: rgba(0, 0, 0, 0.6);
-$bgc-caroussel-pagination: rgba(0, 0, 0, 0.0);
+$bgc-carousel-pagination: rgba(0, 0, 0, 0.0);
 
-//Text color
+
+//Text Colors
 $color-on-dark: #ffffff;
 $color-on-light: #000000;
 $color-primary: #FF6060;
 $color-primary-hover: #FF4040;
 
-//Text-stroke
+
+//Text Stroke & Shade
 $text-stroke1: -1px -1px 0  #000; //détourage 1 
 $text-stroke2: 1px -1px 0 #000; //détourage 2 
 $text-stroke3: -1px  2px 0 #000; //détourage 3 
-
-//Shadow
 $text-shade: 2px 5px 7px rgba(0, 0, 0, 0.8);
+
+
+//Shadows
 $banner-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-$carte-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 $gallery-item-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-//Font family
+
+//Font Families
 $font-family-base:  'Montserrat', sans-serif;
 $font-family-title: 'Poppins', sans-serif;
 
-//Gradient-overlay
+
+//Gradient Overlay
 $bg-gallery-item-gradient-overlay: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 
-//Carrousel buttons settings 1440px-841px
+
+//Media Queries / Breakpoints
+$laptops: 1240px;
+$tablets: 840px;
+$small-mobiles: 576px;
+$xsmall-mobiles: 500px;
+
+
+//Carrousel Buttons Settings 
+  //For screens 1440px-841px
 $xl-button-height: 80px;
 $xl-button-width: 47px;
 $xl-button-position: 50%;
 $xl-button-offset: 2%;
-
-//Carrousel buttons settings max 840px
+  //For screens max 840px
 $xls-button-height: 20px;
 $xls-button-width: 12px;
 $xls-button-position: 50%;
 $xls-button-offset: 7%;
 
-//Media queries / breakpoints
-$laptops: 1240px;
-$tablets: 840px;
-$small-mobiles: 576px;
-$xsmall-mobiles: 500px;
 
 

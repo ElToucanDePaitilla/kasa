@@ -17,7 +17,6 @@
   &:hover img {
     transform: scale(1.15);
   }
-
 }
 
 .gradient-overlay {
@@ -45,16 +44,6 @@
   }
 }
 
-@media (min-width: "#{$laptops}") {
- 
- .gallery-item:nth-last-child(2) {
-    margin-bottom: 40px;
-  }
- .gallery-item:nth-last-child(-n+1) {
-    margin-bottom: 40px;
-  }
-}
-
 @media (max-width: "#{$laptops}") {
 
   .gallery-item {
@@ -65,7 +54,6 @@
       width: 100%;
     }
   }
-
 }
 
 @media (max-width: #{$tablets}) {
@@ -78,19 +66,4 @@
       width: 100%;
     }
   }
-
-  // Neutralisation des marges spécifiques
-  .gallery-item:nth-child(-n+2),
-  .gallery-item:nth-last-child(-n+2) {
-    margin: 0;
-  }
 }
-
-
-
-
-//****
-
-
-
-
