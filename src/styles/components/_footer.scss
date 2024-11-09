@@ -1,9 +1,25 @@
 .footer {
     @extend %flex-column-center !optional;
-    padding: 50px 20px 30px;
+    padding: 50px 0px 30px 0px;
     background-color: $bgc-footer;
     width: auto;
-  
+    height: 209px;
+    margin: 0px -20px 0px -20px;
+    padding: 80px 0px 0px 0px;
+
+
+    @media (max-width: #{$laptops}) {
+      margin: 0;
+    }
+
+    @media (max-width: #{$tablets}) {
+      margin: 0 -20px;
+    }
+
+    @media (max-width: #{$small-mobiles}) {
+      margin: 0 -10px;
+    }
+
     .logo-footer {
       margin-bottom: 30px;
   

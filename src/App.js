@@ -1,6 +1,5 @@
-import './main.scss'
-import './Style.scss';
-import './App.scss';
+import './styles/styles.scss';
+import './styles/app.scss';
 import React from 'react';
 import {
   RouterProvider, // Composant React qui enveloppe l'application pour y injecter les routes.

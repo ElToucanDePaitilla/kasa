@@ -11,24 +11,19 @@
 
   @media (max-width: #{$laptops}) {
       grid-template-columns: repeat(2, minmax(300px, 1fr));
+      padding: 50px;
       gap: 40px;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-bottom: 50px;
     }
 
   @media (max-width: #{$tablets}) {
       grid-template-columns: 1fr;
-      background-color: transparent;
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-top: 0px;
-      margin-bottom: 0;
+      background-color: transparent;  
+      margin: 0 0 20px 0;  
       gap: 30px;
     }
 
   @media (max-width: #{$small-mobiles}) {
-      padding: 0 0 20px 10px;
+      padding: 0 10px 0 20px;
       gap: 20px;
     }
 }

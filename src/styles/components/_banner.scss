@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   max-width: 1240px;
-  margin: 0 auto 20px;
+  margin: 0 auto 20px auto;
   height: 223px;
   border-radius: 25px;
   overflow: hidden;
@@ -55,8 +55,7 @@
     border-radius: 10px;
     text-align: left;
     height: 111px;
-    margin: 0 20px;
-
+    
     h1 {
       font-size: 24px;
       padding: 0 10px 0 20px;
@@ -69,7 +68,7 @@
 @media (max-width: #{$small-mobiles}) {
   .banner {
     text-align: left;
-    margin: 0 0 20px 10px;
+    margin: 0 10px 20px 20px;
     box-shadow: none;
 
     h1 {
