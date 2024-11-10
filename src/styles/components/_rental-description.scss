@@ -16,14 +16,12 @@
       text-align: left;
 
       h2 {
-        color: $color-primary;
-        font-weight: 500;
-        font-size: clamp(18px, 4vw, 36px);
+        @include typo-titre-bien-xl;
         margin: 6px 0 10px;
       }
 
       p {
-        font-size: clamp(14px, 2vw, 18px);
+        @include typo-localisation-xl;
         margin: 0 0 20px;
       }
 
@@ -68,19 +66,15 @@
 
       .left-container {
         h2 {
-          font-size: 18px;
-          line-height: 25.67px;
+          @include typo-titre-bien-s;
         }
 
         p {
-          font-size: 14px;
-          line-height: 19.96px;
+          @include typo-localisation-s;
         }
 
         .rental-tags .tag {
-          height: 24px;
-          font-size: 10px;
-          line-height: 14.26px;
+          @include typo-tag-s;
           border-radius: 5px;
         }
       }

@@ -17,12 +17,9 @@
 
       li {
         .nav-link {
-          font-size: 24px;
-          text-decoration: none;
-          color: $color-on-light;
-          font-weight: 500;
-
+          @include typo-nav-xl; 
           @include hover-active;
+          text-decoration: none; 
         }
       }
     }
@@ -59,8 +56,7 @@
         li {
           .nav-link {
             text-transform: uppercase;
-            font-size: 12px;
-            font-weight: 500;
+            @include typo-nav-s;
           }
         }
       }

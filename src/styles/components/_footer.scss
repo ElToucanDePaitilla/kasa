@@ -30,8 +30,7 @@
     }
   
     .footer-text {
-      color: $color-on-dark;
-      font-size: 14px;
+      @include typo-footer-xl;
       text-align: center;
       margin: 0;
   
@@ -46,6 +45,7 @@
   
     @media (max-width: #{$small-mobiles}) {
       .footer-text {
+        @include typo-footer-s;
         white-space: normal; // Permet le retour à la ligne sur petits écrans
       }
     }

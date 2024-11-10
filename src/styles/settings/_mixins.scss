@@ -1,7 +1,132 @@
+// Définition des mixins typographiques en Sass (SCSS)
+
+// Mixin de base pour les styles typographiques
+@mixin typography-style($font-family, $size, $color, $weight, $line-height) {
+    font-family: $font-family;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    line-height: $line-height;
+  }
+  
+  // Navigation
+  @mixin typo-nav-xl {
+    @include typography-style($font-family-base, 24px, $color-on-light, 500, 34px);
+  }
+  
+  @mixin typo-nav-s {
+    @include typography-style($font-family-base, 12px, $color-on-light, 500, 17px);
+  }
+  
+  // Collapse
+  @mixin typo-collapse-title-xl {
+    @include typography-style($font-family-base, 24px, $color-on-dark, 700, 34px);
+  }
+  
+  @mixin typo-collapse-title-s {
+    @include typography-style($font-family-base, 13px, $color-on-dark, 700, 19px);
+  }
+  
+  @mixin typo-collapse-content-xl {
+    @include typography-style($font-family-base, 18px, $color-on-light, 400, 26px);
+  }
+  
+  @mixin typo-collapse-content-s {
+    @include typography-style($font-family-base, 13px, $color-on-light, 400, 19px);
+  }
+  
+  // Texte des sections Collapse
+  @mixin typo-text-collapse-xl {
+    @include typography-style($font-family-base, 18px, $color-on-light, 400, 26px);
+  }
+  
+  @mixin typo-text-collapse-l {
+    @include typography-style($font-family-base, 18px, $color-on-light, 400, 26px);
+  }
+  
+  @mixin typo-text-collapse-s {
+    @include typography-style($font-family-base, 12px, $color-on-light, 400, 17px);
+  }
+  
+  // Texte de pied de page
+  @mixin typo-footer-xl {
+    @include typography-style($font-family-base, 24px, $color-on-dark, 500, 34px);
+  }
+  
+  @mixin typo-footer-s {
+    @include typography-style($font-family-base, 12px, $color-on-dark, 500, 17px);
+  }
+  
+  // Titre Bien
+  @mixin typo-titre-bien-xl {
+    @include typography-style($font-family-base, 36px, $color-primary, 500, 51px);
+  }
+  
+  @mixin typo-titre-bien-s {
+    @include typography-style($font-family-base, 18px, $color-primary, 500, 26px);
+  }
+  
+  @mixin typo-titre-bien-gallery-item {
+    @include typography-style($font-family-base, 18px, $color-on-dark, 700, 26px);
+  }
+
+  // Localisation
+  @mixin typo-localisation-xl {
+    @include typography-style($font-family-base, 18px, $color-on-light, 500, 26px);
+  }
+  
+  @mixin typo-localisation-s {
+    @include typography-style($font-family-base, 14px, $color-on-light, 500, 20px);
+  }
+  
+  // Tag
+  @mixin typo-tag-xl {
+    @include typography-style($font-family-base, 14px, $color-on-dark, 700, 20px);
+  }
+  
+  @mixin typo-tag-s {
+    @include typography-style($font-family-base, 10px, $color-on-dark, 700, 14px);
+  }
+  
+  // Message error 404
+  @mixin typo-404-xl {
+    @include typography-style($font-family-base, 288px, $color-primary, 700, 411px);
+  }
+  
+  @mixin typo-404-s {
+    @include typography-style($font-family-base, 96px, $color-primary, 700, 137px);
+  }
+  
+  @mixin typo-msg-404-xl {
+    @include typography-style($font-family-base, 36px, $color-primary, 500, 51px);
+  }
+  
+  @mixin typo-msg-404-s {
+    @include typography-style($font-family-base, 18px, $color-primary,500, 26px);
+  }
+
+  @mixin typo-retour-xl {
+    @include typography-style($font-family-base, 18px, $color-on-light, 500, 26px);
+  }
+  
+  @mixin typo-retour-s {
+    @include typography-style($font-family-base, 14px, $color-on-light, 500, 20px);
+  }
+  
+  // Banière
+  @mixin typo-baniere-xl {
+    @include typography-style($font-family-title, 48px, $color-on-dark, 700, 68px);
+  }
+  
+  @mixin typo-baniere-s {
+    @include typography-style($font-family-title, 24px, $color-on-dark, 700, 24px);
+  }
+
+// Header nav
 @mixin hover-active {
-&:hover,
-&.active {
-    text-decoration: underline;
-}
+    &:hover,
+    &.active {
+        text-decoration: underline;
+    }
 }
 

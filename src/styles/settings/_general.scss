@@ -23,21 +23,19 @@ body {
 @media (max-width: #{$laptops}) {
   body {
     margin: 0px 20px 0px 20px;
-    padding: 0px 0px 0px 0px
+    padding: 0;
   }
 }
 
 @media (max-width: #{$tablets}) {
   body {
     margin: 0px 20px 0px 20px;
-    padding: 0px 0px 0px 0px;
   }
 }
 
 @media (max-width: #{$small-mobiles}) {
   body {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0px 10px 0px 0px;
   }
 }
 

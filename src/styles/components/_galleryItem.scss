@@ -37,9 +37,7 @@
   text-align: left;
 
   h3 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 25.67px;
+    @include typo-titre-bien-gallery-item;
     margin: 0;
   }
 }

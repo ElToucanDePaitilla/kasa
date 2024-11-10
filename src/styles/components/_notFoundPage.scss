@@ -1,24 +1,19 @@
 .msg404 {
-  margin: 80px 0;
+  margin: 80px 100px;
   text-align: center;
 
   .NotFound404 {
+    @include typo-404-xl;
     margin: 80px 0;
-    color: $color-primary;
-    font-size: 288px;
-    font-weight: 700;
   }
 
   p {
+    @include typo-msg-404-xl;
     margin: 100px 0;
-    color: $color-primary;
-    font-size: 36px;
-    font-weight: 500;
   }
 
   a {
-    font-size: 18px;
-    font-weight: 500;
+    @include typo-retour-xl;
 
     &:visited {
       color: $color-on-light;
@@ -33,15 +28,16 @@
     margin: 100px 0;
 
     .NotFound404 {
-      font-size: 96px;
+      @include typo-404-s;
     }
 
     p {
-      font-size: 18px;
+      @include typo-msg-404-s;
+      margin: 80px 30px;
     }
 
     a {
-      font-size: 14px;
+      @include typo-retour-s;
     }
   }
 }
