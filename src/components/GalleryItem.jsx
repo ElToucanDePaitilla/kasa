@@ -10,7 +10,6 @@ const GalleryItem = (props) => {
             alt={props.bien.title}
           />
 
-          {/* Overlay dégradé */}
           <div className="gradient-overlay"></div>
 
           <div className="gallery-item-title-overlay">

@@ -125,9 +125,10 @@
 // Header nav
 @mixin hover-active {
   
-  transition: transform 0.3s ease; /* Transition fluide */
+transition: color 0.1s ease; /* Transition fluide */
   
   &:hover {
+      
       color: $color-nav-hover;
   }
 
@@ -136,14 +137,3 @@
       text-decoration: underline; // Soulignement seulement quand c'est actif
   }
 }
-
-
-
-/*
-@mixin hover-active {
-    &:hover,
-    &.active {
-        text-decoration: underline;
-    }
-}
-*/
