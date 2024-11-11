@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import LogoHeader from '../assets/images/logos/LogoHeader.png';
 
 const Header = () => {
-
-    const [activeTab, setActiveTab] = useState('');useState('')
+    const [activeTab, setActiveTab] = useState('');
 
     useEffect(() => {
         const currentPath = window.location.pathname;
@@ -16,11 +15,12 @@ const Header = () => {
 
     return (
         <div className="header">
-           
             <div className="logo-header">
-                <a href="/"><img src={LogoHeader} alt="Kasa Logo" /></a>
+                <a href="/">
+                    <img src={LogoHeader} alt="Kasa Logo" />
+                </a>
             </div>
-            
+
             <nav>
                 <ul>
                     <li>
@@ -31,7 +31,6 @@ const Header = () => {
                             Accueil
                         </a>
                     </li>
-
                     <li>
                         <a
                             href="/about"
@@ -47,3 +46,4 @@ const Header = () => {
 };
 
 export default Header;
+
