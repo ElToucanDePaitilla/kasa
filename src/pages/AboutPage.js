@@ -8,7 +8,7 @@ import collapsesData from '../datas/collapses-text.json'; // Importer les donné
 
 const AboutPage = () => {
   return (
-    <div>
+    <main>
       <Header />
       <Banner imageSrc={imageAbout} bannerType="about" /> {/* Classe 'about' */}
       <section className="content">
@@ -17,7 +17,7 @@ const AboutPage = () => {
                 ))}
       </section>
       <Footer />
-    </div>
+    </main>
   );
 };
 

@@ -31,12 +31,12 @@ const RentalDescriptionPage = () => {
   }
 
   return (
-    <div>
+    <main>
       <Header />
       <Carrousel pictures={rental.pictures} />
       <RentalDescription rental={rental} />
       <Footer />
-    </div>
+    </main>
   );
 };
 

@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 
 const NotFoundPage = () => {
   return (
-    <div>
+    <main>
         <Header />
         <Error404 />
         <Footer />
-      </div>
+    </main>
   );
 };
 

@@ -7,7 +7,7 @@ import imageHome from "../assets/images/banner/ImageHeaderHome.png";
 
 const HomePage = () => {
   return (
-    <div>
+    <main>
       <Header />
       <Banner 
       imageSrc={imageHome}
@@ -19,7 +19,7 @@ const HomePage = () => {
       bannerType="home" /> {/* Classe 'home' */}
       <Gallery />
       <Footer />
-    </div>
+    </main>
   );
 };
 
