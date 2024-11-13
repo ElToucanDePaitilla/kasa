@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kasa/static/css/main.53679fc5.css",
-    "main.js": "/kasa/static/js/main.a68afea1.js",
-    "static/media/ImageHeaderAbout.png": "/kasa/static/media/ImageHeaderAbout.388a325a41a4341c7ba0.png",
-    "static/media/ImageHeaderHome.png": "/kasa/static/media/ImageHeaderHome.7b295fcb71808167cd75.png",
-    "index.html": "/kasa/index.html",
-    "main.53679fc5.css.map": "/kasa/static/css/main.53679fc5.css.map",
-    "main.a68afea1.js.map": "/kasa/static/js/main.a68afea1.js.map"
+    "main.css": "//eltoucandepaitilla.github.io/kasa/static/css/main.53679fc5.css",
+    "main.js": "//eltoucandepaitilla.github.io/kasa/static/js/main.6f9fd25d.js",
+    "static/media/ImageHeaderAbout.png": "//eltoucandepaitilla.github.io/kasa/static/media/ImageHeaderAbout.388a325a41a4341c7ba0.png",
+    "static/media/ImageHeaderHome.png": "//eltoucandepaitilla.github.io/kasa/static/media/ImageHeaderHome.7b295fcb71808167cd75.png",
+    "index.html": "//eltoucandepaitilla.github.io/kasa/index.html",
+    "main.53679fc5.css.map": "//eltoucandepaitilla.github.io/kasa/static/css/main.53679fc5.css.map",
+    "main.6f9fd25d.js.map": "//eltoucandepaitilla.github.io/kasa/static/js/main.6f9fd25d.js.map"
   },
   "entrypoints": [
     "static/css/main.53679fc5.css",
-    "static/js/main.a68afea1.js"
+    "static/js/main.6f9fd25d.js"
   ]
 }
